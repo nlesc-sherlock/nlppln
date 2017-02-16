@@ -4,7 +4,7 @@ class: CommandLineTool
 baseCommand: ["python", "-m", "nlppln.commands.freqs"]
 
 arguments:
-  - valueFrom: $(runtime.outdir)/freqs.csv
+  - valueFrom: $(runtime.outdir)/pos_freqs.csv
     position: 2
 
 inputs:
@@ -24,4 +24,4 @@ outputs:
   - id: freqs
     type: File
     outputBinding:
-      glob: "freqs.csv"
+      glob: "pos_freqs.csv"
